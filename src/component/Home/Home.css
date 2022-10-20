@@ -1,10 +1,28 @@
+* {
+    color: white;
+}
 .state {
     display: grid;
     grid-template-columns: auto;
 }
 
 .state div:nth-child(even) {
-    background-color: gainsboro;
+    background-color: rgb(203, 63, 124);
+}
+.state div:nth-child(odd) {
+    background-color: rgb(237, 9, 108);
+}
+
+.country {
+    background-color: rgb(200, 4, 89);
+}
+
+.map {
+    width: 100%;
+}
+
+#state-filter {
+    color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -12,4 +30,14 @@
         display: grid;
         grid-template-columns: auto auto auto;
     }
+
+    .country {
+        background-color: rgb(200, 4, 89);
+        display: flex;
+    }
+
+    .map {
+        width: 50%;
+    }
+
 }

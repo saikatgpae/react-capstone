@@ -4,7 +4,7 @@ export default function StateWiseData(props) {
   // eslint-disable-next-line react/prop-types
   const { state, total } = props;
   return (
-    <div>
+    <div className="each-state p-2" id={state}>
       <h3>
         State name :
         {state}
