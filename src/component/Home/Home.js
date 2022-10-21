@@ -2,13 +2,13 @@ import './Home.css';
 import { v4 as uuidv4 } from 'uuid';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, React } from 'react';
-import { fetchData } from '../../redux/fetch/cvReducer';
-import StateWiseData from '../stateData/StateWiseData';
-// import IndiaMap from '../IndiaMap/IndiaMap';
+import { fetchData } from '../../redux/Home/cvReducerRedux';
+import StateWiseData from '../stateWiseData/StateWiseData';
 
 export default function Home() {
   const dispatch = useDispatch();
   const states = useSelector((presentState) => presentState.dataReducer);
+  // console.log(states);
   useEffect(() => {
     if (states.length === 0) {
       dispatch(fetchData());
@@ -34,28 +34,32 @@ export default function Home() {
       currentDiv.style.display = 'block';
     }
   };
+
   return (
     <div className="">
       <div className="country p-4">
         <div className="map">
-          India Map
+          {/* <IndiaMap /> */}
+          India
         </div>
-        <h2 className="p-5">
+        <h2 className="p-2">
           Total confirm Corona Virus Case in India :
           {allTotal}
         </h2>
       </div>
-      <select name="filter-state" id="state-filter" onChange={handelChange}>
-        <option value="select">Select all State</option>
-        {states.map((state) => (
-          <option key={uuidv4()}>{state.state}</option>
-        ))}
-      </select>
+      <div className="">
+        <select name="filter-state" id="state-filter" onChange={handelChange}>
+          <option value="select">Select all State</option>
+          {states.map((state) => (
+            <option key={uuidv4()}>{state.state_name}</option>
+          ))}
+        </select>
+      </div>
       <div className="state">
         {states.map((state) => (
           <StateWiseData
             key={states.indexOf(state)}
-            state={state.state}
+            stateName={state.state_name}
             total={state.total.confirmed}
           />
         ))}

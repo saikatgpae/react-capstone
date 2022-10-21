@@ -1,7 +1,7 @@
 /* eslint-disable */
-import React from "react";
-import { VectorMap } from "react-jvectormap";
-import './IndiaMap.css'
+import React from 'react';
+import { VectorMap } from 'react-jvectormap';
+import './IndiaMap.css';
 
 const IndiaMap = () => {
   return (
