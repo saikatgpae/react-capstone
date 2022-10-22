@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Details renders correctly 1`] = `
+exports[`Details Can search for a post using its ID 1`] = `
 Array [
   <h3>
     state COVID information details.

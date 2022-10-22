@@ -18,7 +18,7 @@ This app display the state wise COVID infection informations of India.
 
 ## Video link
 
-[Live Demo Link](https://drive.google.com/file/d/12KXOqL7bU13HMbZ0CQS8pEQ73wj82RuS/view?usp=sharing)
+[Video Link](https://drive.google.com/file/d/1KrhTYB3hMcg6IuNOfjoKJPYiSRbfFNf4/view?usp=sharing)
 
 ## Getting Started
 

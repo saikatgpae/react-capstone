@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { BrowserRouter, Link } from 'react-router-dom';
 import { BsGear, BsMic } from 'react-icons/bs';
 import { AiFillCaretLeft } from 'react-icons/ai';
