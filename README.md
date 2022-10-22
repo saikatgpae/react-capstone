@@ -14,7 +14,7 @@ This app display the state wise COVID infection informations of India.
 
 ## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://saikatgpae.github.io/react-capstone/)
 
 ## Video link
 
