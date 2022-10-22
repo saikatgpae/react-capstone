@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details renders correctly 1`] = `
+Array [
+  <h3>
+    state COVID information details.
+  </h3>,
+  <div>
+    <h4>
+      State name :
+    </h4>
+    <h3>
+      Delta
+    </h3>
+    <small
+      className="p-2"
+    >
+      confirmed :
+    </small>
+    <small
+      className="p-2"
+    >
+      tested :
+    </small>
+    <small
+      className="p-2"
+    >
+      vaccinated :
+    </small>
+  </div>,
+]
+`;

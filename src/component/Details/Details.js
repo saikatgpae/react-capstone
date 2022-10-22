@@ -3,11 +3,12 @@ import { useSelector } from 'react-redux';
 import './Details.css';
 
 export default function Details() {
+  document.querySelector('.back').style.display = 'block';
   const states = useSelector((presentState) => presentState.dataReducer);
   const filtered = states.filter((element) => element.filtered === 'true');
   const object = filtered[0];
   return (
-    <div className="state-details p-4">
+    <div className="state-details p-4" data-testid="state-details-information">
       <h1 className="p-1 text-center p-4">
         {object.state_name}
         . state COVID information details.
