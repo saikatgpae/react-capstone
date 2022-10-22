@@ -10,7 +10,9 @@ function Header() {
   const dispatch = useDispatch();
   const handelClick = () => {
     dispatch(removeFilter());
+    document.querySelector('.back').style.display = 'none';
   };
+
   return (
     <div className="header p-4 d-flex justify-content-between">
       <div>

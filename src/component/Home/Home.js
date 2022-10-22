@@ -6,7 +6,9 @@ import { fetchData } from '../../redux/Home/cvReducerRedux';
 import StateWiseData from '../stateWiseData/StateWiseData';
 
 export default function Home() {
-  document.querySelector('.back').style.display = 'none';
+  window.addEventListener('load', () => {
+    document.querySelector('.back').style.display = 'none';
+  });
   const dispatch = useDispatch();
   const states = useSelector((presentState) => presentState.dataReducer);
   useEffect(() => {
