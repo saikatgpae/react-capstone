@@ -1,0 +1,13 @@
+.details-arrow {
+  background-color: transparent;
+
+  /* border-bottom: 1px dotted rgb(105, 102, 102); */
+}
+
+.arrow {
+  width: 1rem;
+}
+
+.arrow-icon {
+  float: right;
+}

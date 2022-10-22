@@ -1,0 +1,64 @@
+* {
+  color: white;
+}
+
+.state {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.state div:nth-child(odd) {
+  background-color: rgb(241, 60, 139);
+}
+
+.state div:nth-child(even) {
+  background-color: rgb(241, 60, 139);
+}
+
+.select-dropdown {
+  background-color: rgb(241, 60, 139);
+  padding-left: 10px;
+}
+
+.country {
+  background-color: rgb(249, 85, 153);
+}
+
+.map {
+  width: 100%;
+}
+
+#state-filter {
+  color: black;
+}
+
+.each-state {
+  border: 0.5px dotted rgb(247, 106, 167);
+}
+
+@media screen and (min-width: 768px) {
+  .state {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .country {
+    display: flex;
+  }
+
+  .map {
+    width: 50%;
+  }
+
+  .state div:nth-child(odd) {
+    background-color: rgb(241, 60, 139);
+  }
+
+  .state div:nth-child(even) {
+    background-color: rgb(204, 67, 127);
+  }
+
+  .each-state {
+    border: none;
+  }
+}
