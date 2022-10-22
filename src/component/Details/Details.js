@@ -6,13 +6,12 @@ export default function Details() {
   const states = useSelector((presentState) => presentState.dataReducer);
   const filtered = states.filter((element) => element.filtered === 'true');
   const object = filtered[0];
-  // window.location.reload(false);
-  console.log(object);
-  // console.log(Object.keys(object));
-  // console.log(object);
   return (
     <div className="state-details p-4">
-      <h1 className="text-primary">Welcome to Details page</h1>
+      <h1 className="p-1 text-center p-4">
+        {object.state_name}
+        . state COVID information details.
+      </h1>
       <h4>
         State name :
         {object.state_name}
@@ -23,7 +22,7 @@ export default function Details() {
         {object.delta.confirmed}
       </small>
       <small className="p-2">
-        confirmed :
+        tested :
         {object.delta.tested}
       </small>
       <small className="p-2">
@@ -36,7 +35,7 @@ export default function Details() {
         {object.delta7.confirmed}
       </small>
       <small className="p-2">
-        confirmed :
+        tested :
         {object.delta7.tested}
       </small>
       <small className="p-2">
@@ -49,18 +48,22 @@ export default function Details() {
         {object.total.confirmed}
       </small>
       <small className="p-2">
+        <br />
         deceased :
         {object.total.deceased}
       </small>
       <small className="p-2">
+        <br />
         recovered :
         {object.total.recovered}
       </small>
       <small className="p-2">
+        <br />
         tested :
         {object.total.tested}
       </small>
       <small className="p-2">
+        <br />
         vaccinated1 :
         {object.total.vaccinated1}
       </small>

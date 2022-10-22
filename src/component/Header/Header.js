@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import React from 'react';
 import { BsGear, BsMic } from 'react-icons/bs';
 import { removeFilter } from '../../redux/Home/cvReducerRedux';
+import './Header.css';
 
 function Header() {
   const dispatch = useDispatch();

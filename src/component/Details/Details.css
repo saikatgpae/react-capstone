@@ -1,4 +1,14 @@
-body {
+/* body {
   background-color: blue;
   color: black;
+} */
+
+.state-details {
+  background-color: rgb(241, 60, 139);
+  color: white;
 }
+
+/*
+.state div:nth-child(n) {
+  background-color: rgb(241, 60, 139);
+} */

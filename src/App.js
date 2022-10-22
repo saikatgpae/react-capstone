@@ -7,7 +7,7 @@ import Home from './component/Home/Home';
 
 function App() {
   return (
-    <div className="App p-3">
+    <div className="App">
       <React.StrictMode>
         <Header />
         <Routes>

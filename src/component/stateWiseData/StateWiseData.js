@@ -6,13 +6,20 @@ import './StateWiseData.css';
 
 export default function StateWiseData(props) {
   const dispatch = useDispatch();
-  // eslint-disable-next-line react/prop-types
-  const { stateName, total } = props;
+  const {
+    // eslint-disable-next-line react/prop-types
+    stateName, total, deceased, recovered,
+  } = props;
   const handelClick = () => {
     dispatch(filterData(stateName));
   };
   return (
-    <div className="each-state" id={stateName}>
+    <div className="each-state p-3" id={stateName}>
+      <div className="details-arrow">
+        <Link to="/detalis" onClick={handelClick}>
+          <BiRightArrowCircle className="arrow-icon" />
+        </Link>
+      </div>
       <h6>
         State name :
         {stateName}
@@ -21,11 +28,14 @@ export default function StateWiseData(props) {
         Total Confirmed case :
         {total}
       </small>
-      <div className="details-arrow">
-        <Link to="/detalis" onClick={handelClick}>
-          <BiRightArrowCircle />
-        </Link>
-      </div>
+      <small>
+        Total deceased :
+        {deceased}
+      </small>
+      <small>
+        Total recovered :
+        {recovered}
+      </small>
     </div>
   );
 }

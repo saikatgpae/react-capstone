@@ -1,5 +1,5 @@
 * {
-  color: rgb(2, 2, 2);
+  color: white;
 }
 
 .state {
@@ -8,15 +8,19 @@
 }
 
 .state div:nth-child(odd) {
-  /* background-color: rgb(203, 63, 124); */
+  background-color: rgb(241, 60, 139);
 }
 
 .state div:nth-child(even) {
-  /* background-color: rgb(139, 15, 69); */
+  background-color: rgb(241, 60, 139);
+}
+
+.select-dropdown {
+  background-color: rgb(241, 60, 139);
 }
 
 .country {
-  /* background-color: rgb(200, 4, 89); */
+  background-color: rgb(249, 85, 153);
 }
 
 .map {
@@ -25,6 +29,10 @@
 
 #state-filter {
   color: black;
+}
+
+.each-state {
+  border: 0.5px dotted rgb(247, 106, 167);
 }
 
 @media screen and (min-width: 768px) {
@@ -40,5 +48,17 @@
 
   .map {
     width: 50%;
+  }
+
+  .state div:nth-child(odd) {
+    background-color: rgb(241, 60, 139);
+  }
+
+  .state div:nth-child(even) {
+    background-color: rgb(167, 71, 113);
+  }
+
+  .each-state {
+    border: none;
   }
 }

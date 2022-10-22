@@ -38,16 +38,12 @@ export default function Home() {
   return (
     <div className="">
       <div className="country p-4">
-        <div className="map">
-          {/* <IndiaMap /> */}
-          India
-        </div>
         <h2 className="p-2">
-          Total confirm Corona Virus Case in India :
+          Total confirm Corona Virus Cases in India :
           {allTotal}
         </h2>
       </div>
-      <div className="">
+      <div className="select-dropdown">
         <select name="filter-state" id="state-filter" onChange={handelChange}>
           <option value="select">Select all State</option>
           {states.map((state) => (
@@ -61,6 +57,8 @@ export default function Home() {
             key={states.indexOf(state)}
             stateName={state.state_name}
             total={state.total.confirmed}
+            deceased={state.total.deceased}
+            recovered={state.total.recovered}
           />
         ))}
       </div>
